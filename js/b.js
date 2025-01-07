@@ -26,4 +26,3 @@ document.onreadystatechange = function() {
         setTimeout(() => loadingBar.style.display = 'none', 500);
     }
 };
-￼Enter
