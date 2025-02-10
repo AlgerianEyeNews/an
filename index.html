@@ -1,88 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-5435534402980565">
-    <title id="title">AnimeCat</title>
-    <link rel="stylesheet" href="css/a.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5435534402980565"
-     crossorigin="anonymous"></script>
+    <meta name="description" content="موقع Anime Cat لأحدث أخبار الأنمي والمانجا اليابانية، مراجعات حصرية، مقالات تحليلية، وأكثر">
+    <meta name="keywords" content="أنمي, مانجا, أخبار أنمي, مراجعات أنمي">
+    <title>Anime Cat - أخبار الأنمي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        header {
+            background-color: #2d2d2d;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 3px solid #ff6b6b;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            color: #ff6b6b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .navbar {
+            background-color: #2d2d2d;
+            padding: 1rem;
+        }
+
+        .navbar ul {
+            display: flex;
+            gap: 2.5rem;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar a {
+            color: #ff6b6b;
+            text-decoration: none;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar i {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+
+        /* تأثير عند التمرير */
+        .navbar a:hover {
+            color: #FFFFFF;
+            transform: translateY(-3px);
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .featured-article {
+            background-color: #2d2d2d;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .article-card {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .article-card:hover {
+            color: #FF6B6B;
+            transform: translateY(-5px);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 1rem;
+        }
+
+        .article-content p {
+            opacity: 0.7;
+        }
+
+        .article-date {
+            color: #888;
+            font-size: 0.9rem;
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #2d2d2d;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .social-links {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: #fff;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #FF6B6B;
+        }
+
+        @media (max-width: 768px) {
+          .logo {
+            font-size: 26px;
+          }
+            nav ul {
+                text-align: center;
+                gap: 3rem;
+            }
+            .navbar a {
+              color: #ff6b6b;
+              text-decoration: none;
+            }
+            .nav{
+              display: flex;
+              
+            }
+            .navbar i {
+              font-size: 1rem;
+              flex-direction: row;
+              white-space: nowrap;
+              margin-bottom: 0.3rem;
+            }
+        }
+        .ad-container, .in-content-ad {
+          margin: 20px auto;
+          text-align: center;
+          background: rgba(255,255,255,0.1);
+          padding: 15px;
+          border-radius: 8px;
+        }
+
+    </style>
 </head>
 <body>
-  <div id="loadingBar"></div>
-    <header class="header">
-        <div id="logo" class="logo">AnimeCat</div>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <div class="sidebar" id="sidebar">
-          <a href="#home">Home</a>
-          <a href="#news">Anime Library</a>
-          <a href="#news">Anime movies</a>
-          <a href="#Release_Schedule">Season anime</a>
-          <a href="#contact">Episode dates</a>
-          <a href="#about_us">About us</a>
+    <header>
+        <div class="logo">
+            <i class="fas fa-cat"></i>
+            <h1>Anime Cat</h1>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">Anime Library</a></li>
-                <li><a href="#gallery">Anime Movies</a></li>
-                <li><a href="#contact">Season Anime</a></li>
-                <li><a href="#policy">Episode dates</a></li>
-                <li><a href="#about_us">About us</a></li>
-            </ul>
-        </nav>
+        <!-- داخل وسم <header> -->
+<div class="ad-container">
+    <!-- كود AdSense هنا -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXX" data-ad-slot="XXXXX" data-ad-format="auto"></ins>
+</div>
     </header>
 
+    <nav class="navbar">
+  <ul>
+    <li>
+      <a href="#">
+        <i class="fas fa-home"></i>
+        <span class="visually-hidden">الرئيسية</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fas fa-newspaper"></i>
+        <span class="visually-hidden">اخبار</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fas fa-star"></i>
+        <span class="visually-hidden">مراجعات</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fas fa-file-alt"></i>
+        <span class="visually-hidden">مقالات</span>
+      </a>
+    </li>
+  </ul>
+</nav>
     <main>
-        <section id="home" class="hero">
-            <h1 id="home_welcome"></h1>
-            <p id="home_p"></p>
+      <!-- داخل وسم <main> -->
+<div class="in-content-ad">
+    <!-- كود AdSense هنا -->
+    <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-XXXXX" data-ad-client="ca-pub-XXXXX" data-ad-slot="XXXXX"></ins>
+</div>
+        <section class="featured-article">
+            <h2>مقالة مميزة</h2>
+            <p>أحدث أخبار الأنمي لهذا الأسبوع...</p>
         </section>
 
-        <section id="news_anime_library" class="section">
-            <h2 id="anime_library">Anime library</h2>
-            <p></p>
-        </section>
+        <div class="news-grid">
+            <article class="article-card">
+                <img id="pic1" src="" alt="أنمي" class="article-image">
+                <div class="article-content">
+                    <div id="date1" class="article-date"></div>
+                    <h3 id="title1" ></h3>
+                    <p id="short1" ></p>
+                </div>
+            </article>
 
-        <section id="gallery" class="section">
-            <h2>Anime movies</h2>
-            <p></p>
-        </section>
+            <article class="article-card">
+                <img id="pic2" src="" alt="أنمي" class="article-image">
+                <div class="article-content">
+                    <div id="date2" class="article-date"></div>
+                    <h3 id="title2" ></h3>
+                    <p id="short2" ></p>
+                </div>
+            </article>
 
-        <section id="news_season_anime" class="section">
-            <h2>Season Anime</h2>
-            <p></p>
-        </section>
-
-        <section id="episode_date" class="section">
-            <h2>epsoide date</h2>
-            <p></p>
-        </section>
-
+            <article class="article-card">
+                <img id="pic3" src="" alt="أنمي" class="article-image">
+                <div class="article-content">
+                    <div id="date3" class="article-date"></div>
+                    <h3 id="title3" ></h3>
+                    <p id="short3" ></p>
+                </div>
+            </article>
+        </div>
     </main>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5435534402980565"
-     crossorigin="anonymous"></script>
-<!-- qiwt -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5435534402980565"
-     data-ad-slot="3308253875"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <footer class="footer">
-      <button id="backToTop" onclick="scrollToTop()">↑ Back to Top</button>
-        <p>&copy; 2025 Anime Cat. All rights reserved.</p><div id="about_us"></div>
-        <p><a href="html/PrivacyPolicy.html">Privacy Policy</a></p>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="www.facebook.com/profile.php?id=61572785023368"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>© 2023 Anime Cat - جميع الحقوق محفوظة</p>
+        <!-- صفحة الخصوصية في الفوتر -->
+        <a href="/privacy.html" style="color: #ff6b6b; text-decoration: none">سياسة الخصوصية</a>
     </footer>
-  <script src="js/a.js"></script>
-  <script src="js/b.js"></script>
-  <script src="js/c.js"></script>
-  <script src="js/d.js"></script>
-  <script src="js/e.js"></script>
-  <script src="js/f.js"></script>
+
+    <script>
+        // يمكن إضافة تفاعلات جافاسكريبت هنا
+        document.addEventListener('DOMContentLoaded', function() {
+            // مثال: إضافة تأثير عند التمرير
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 100) {
+                    header.style.backgroundColor = '#1a1a1a';
+                } else {
+                    header.style.backgroundColor = '#2d2d2d';
+                }
+            });
+        });
+    </script>
+    <script src="js/news.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
