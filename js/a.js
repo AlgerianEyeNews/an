@@ -1,47 +1,42 @@
-var default_language = 0;
-const languages = [
-  
-  [
-      // Arabic
-      'قط الأنمي',
-      'مرحبا بك في موقع قط الأنمي',
-      'الوجهة المفضلة لمتابعي أخبار الانمي',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      ''
-  ],
-  
-  [
-      // English
-      'AnimeCat',
-      'Welcome to AnimeCat',
-      'The favorite destination for anime news followers',
-      ''
-  ],
-  
-  [],  // Espanol
-  [],  // Russian
-  [],  // Chinese
-  ];
-change_language(default_language);
-function change_language(lang) {
-  document.getElementById('title').textContent = languages [lang][0];
-  document.getElementById('logo').textContent = languages [lang][0];
-  document.getElementById('home_welcome').textContent = languages [lang][1];
-  document.getElementById('home_p').textContent = languages [lang][2];
-  document.getElementById('title').textContent = languages [lang][3];
-  document.getElementById('title').textContent = languages [lang][0];
-  document.getElementById('title').textContent = languages [lang][0];
-  document.getElementById('title').textContent = languages [lang][0];
-  document.getElementById('title').textContent = languages [lang][0];
-  document.getElementById('title').textContent = languages [lang][0];
-}
+// 1
+
+var mydate1 = '10/02/2025';
+var mytitle1 = 'الأنمي السعودي "أساطير في قادم الزمان" يعرض موسمه الثاني في طوكيو';
+var myshort1 = 'احتفلت شركة "مانجا للإنتاج" بالعرض الأول للموسم الثاني من مسلسل "أساطير في قادم الزمان" في العاصمة اليابانية طوكيو';
+var mypic1 = 'pictures/pic1.jpeg';
+
+// 2
+
+var mydate2 = '10/02/2025';
+var mytitle2 = 'إعلانات أنمي جديدة لموسم شتاء 2025';
+var myshort2 = 'تم الإعلان عن عدة أعمال أنمي جديدة من المقرر عرضها في شتاء 2025، منها:';
+var mypic2 = 'pictures/pic2.jpeg';
+
+// 3
+
+var mydate3 = '10/02/2025';
+var mytitle3 = 'تحديثات حول مانغا Hunter x Hunter';
+var myshort3 = 'أعلن المؤلف يوشيهيرو توغاشي عبر حسابه على تويتر أنه يعمل حاليًا على الفصول الـ50 القادمة من سلسلة "Hunter x Hunter"، مما أسعد المعجبين بعودة المانغا بعد توقف دام أكثر من عامين.';
+var mypic3 = 'pictures/pic3.jpeg';
+
+// المقال الأول
+
+document.getElementById("date1").innerText = mydate1;
+document.getElementById("title1").innerText = mytitle1;
+document.getElementById("short1").innerText = myshort1;
+document.getElementById("pic1").src = mypic1;
+
+// المقال الثاني
+
+document.getElementById("date2").innerText = mydate2;
+document.getElementById("title2").innerText = mytitle2;
+document.getElementById("short2").innerText = myshort2;
+document.getElementById("pic2").src = mypic2;
+
+// المقال الثالث
+
+document.getElementById("date3").innerText = mydate3;
+document.getElementById("title3").innerText = mytitle3;
+document.getElementById("short3").innerText = myshort3;
+document.getElementById("pic3").src = mypic3;
+
