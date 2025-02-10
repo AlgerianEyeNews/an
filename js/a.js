@@ -3,21 +3,21 @@
 var mydate1 = '10/02/2025';
 var mytitle1 = 'الأنمي السعودي "أساطير في قادم الزمان" يعرض موسمه الثاني في طوكيو';
 var myshort1 = 'احتفلت شركة "مانجا للإنتاج" بالعرض الأول للموسم الثاني من مسلسل "أساطير في قادم الزمان" في العاصمة اليابانية طوكيو';
-var mypic1 = 'pictures/pic1.jpeg';
+var mypic1 = 'https://i.postimg.cc/d1VSjVBk/images-9.jpg';
 
 // 2
 
 var mydate2 = '10/02/2025';
 var mytitle2 = 'إعلانات أنمي جديدة لموسم شتاء 2025';
 var myshort2 = 'تم الإعلان عن عدة أعمال أنمي جديدة من المقرر عرضها في شتاء 2025، منها:';
-var mypic2 = 'pictures/pic2.jpeg';
+var mypic2 = 'https://i.postimg.cc/d1VSjVBk/images-9.jpg';
 
 // 3
 
 var mydate3 = '10/02/2025';
 var mytitle3 = 'تحديثات حول مانغا Hunter x Hunter';
 var myshort3 = 'أعلن المؤلف يوشيهيرو توغاشي عبر حسابه على تويتر أنه يعمل حاليًا على الفصول الـ50 القادمة من سلسلة "Hunter x Hunter"، مما أسعد المعجبين بعودة المانغا بعد توقف دام أكثر من عامين.';
-var mypic3 = 'pictures/pic3.jpeg';
+var mypic3 = 'https://i.postimg.cc/d1VSjVBk/images-9.jpg';
 
 // المقال الأول
 
